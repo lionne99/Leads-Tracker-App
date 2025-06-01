@@ -1,18 +1,20 @@
 <html>
     <head>
+        <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+        <link rel="manifest" href="favicon/site.webmanifest">
+        </script>
+        <title>Leads Tracker</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-        <link rel="manifest" href="/site.webmanifest">
+        <meta http-equiv="Content-Security-Policy" content="script-src 'self' http://localhost:* http://127.0.0.1:* https://www.gstatic.com https://leads-tracker-94d47-default-rtdb.firebaseio.com/.lp?start=t&ser=97882858&cb=2&v=5 https://s-usc1b-nss-2158.firebaseio.com/.lp?id=273455&pw=4KwJGg0faB&ser=91551139&ns=leads-tracker-94d47-default-rtdb; object-src 'none'; base-uri 'self';">
         <link rel="stylesheet" href="index.css">
     </head>
     <body>
-        <input type="text" id="input-el">
-        <button id="input-btn" style="transition: transform 0.1s ease-in-out;" onclick="this.style.transform = 'scale(0.8)'; setTimeout(() => this.style.transform = 'scale(1)', 100);">SAVE INPUT</button> 
-        <button id="tab-btn" style="transition: transform 0.1s ease-in-out;" onclick="this.style.transform = 'scale(0.8)'; setTimeout(() => this.style.transform = 'scale(1)', 100);">SAVE TAB</button>
-        <button id="delete-btn" style="transition: transform 0.1s ease-in-out;" onclick="this.style.transform = 'scale(0.8)'; setTimeout(() => this.style.transform = 'scale(1)', 100);">DELETE ALL</button>
+        <input type="text" id="input-el" placeholder="www.google.com">
+        <button id="input-btn">SAVE INPUT</button> 
+        <button id="delete-btn">DELETE ALL</button>
         <ul id="ul-el"></ul>
-        <script src="index.js"></script>
+        <script type="module" src="index.js"></script>
     </body>
 </html>
